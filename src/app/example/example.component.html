@@ -1,3 +1,48 @@
-<div id="window1">
-    <app-window1></app-window1>
+<div id="content">
+    <div id="window1" class="window">
+        <button (click)="resize(1)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(1)">Hide</button>
+        <app-window1></app-window1>
+    </div>
+    <div id="window2" class="window">
+        <button (click)="resize(2)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(2)">Hide</button>
+        <!-- <app-window2></app-window2>   -->
+    </div>
+    <div id="window3" class="window">
+        <button (click)="resize(3)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(3)">Hide</button>
+        <!-- <app-window1></app-window1> -->
+    </div>
+    <div id="window4" class="window">
+        <button (click)="resize(4)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(4)">Hide</button>
+        <!-- <app-window1></app-window1> -->
+    </div>
+    <div id="window5" class="window">
+        <button (click)="resize(5)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(5)">Hide</button>
+        <!-- <app-window1></app-window1> -->
+    </div>
+    <div id="window6" class="window">
+        <button (click)="resize(6)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(6)">Hide</button>
+        <!-- <app-window1></app-window1> -->
+    </div>
+    <div id="window7" class="window">
+        <button (click)="resize(7)">Resize</button>
+        <button *ngIf="!isMainWindowMax" (click)="hide(7)">Hide</button>
+        <!-- <app-window1></app-window1> -->
+    </div>
+    <div id="bigboy"></div>
+    <div id="sidepanel">
+        <div *ngIf="!isWindowShown[1]" class="side_button"><button (click)="show(1)">1</button></div>
+        <div *ngIf="!isWindowShown[2]" class="side_button"><button (click)="show(2)">2</button></div>
+        <div *ngIf="!isWindowShown[3]" class="side_button"><button (click)="show(3)">3</button></div>
+        <div *ngIf="!isWindowShown[4]" class="side_button"><button (click)="show(4)">4</button></div>
+        <div *ngIf="!isWindowShown[5]" class="side_button"><button (click)="show(5)">5</button></div>
+        <div *ngIf="!isWindowShown[6]" class="side_button"><button (click)="show(6)">6</button></div>
+        <div *ngIf="!isWindowShown[7]" class="side_button"><button (click)="show(7)">7</button></div>
+    </div>
 </div>
+
